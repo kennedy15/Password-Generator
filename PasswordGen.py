@@ -18,7 +18,7 @@ class Password_Generator():
 
         char = string.ascii_letters + string.digits + string.punctuation
 
-        size = int(raw_input("How long would you like your password? "))
+        size = int(raw_input("What would you like your password length to be? "))
         size = size - 5
 
         second_half =  ''.join(random.choice(char) for _ in range(size))
