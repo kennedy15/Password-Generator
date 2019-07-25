@@ -1,6 +1,10 @@
        
        Password Generator written in C#
        
+       string[] Word_Lines = System.IO.File.ReadAllLines(@"C:\Users\nkennedy\Documents\words.txt");
+
+       string characters = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqUuRrSsTtVvWwXxYyZz123456789";
+       
        public string Generate_Password()
         {
             int length = Word_Lines.Length;
